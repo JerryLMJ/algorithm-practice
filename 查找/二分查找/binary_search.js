@@ -3,7 +3,7 @@ function binary_search(list, value) {
   var high = list.length - 1;
 
   while (low <= high) {
-    mid = parseInt((low + high) / 2);
+    const mid = parseInt((low + high) / 2);
     const guess = list[mid];
     if (guess === value) {
       return mid;
@@ -17,7 +17,7 @@ function binary_search(list, value) {
 }
 
 const list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const value = 3;
+const value = 7;
 console.log("result:", binary_search(list, value));
 
 /*
