@@ -16,4 +16,4 @@ def binary_search(list, value):
 
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 value = 3
-print('result:', binary_search(list, value))
+print('result: {}'.format(binary_search(list, value)))

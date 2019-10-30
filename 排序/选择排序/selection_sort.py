@@ -8,11 +8,11 @@ def findSmallest(arr):
   return smallest_index
 
 
-def sellectionSort(arr):
+def selectionSort(arr):
   newArr = []
-  for i in range(len(arr)):
+  for _ in arr[:]:
     smallest = findSmallest(arr)
     newArr.append(arr.pop(smallest))
   return newArr
 
-print('result:', sellectionSort([5, 2, 7, 12, 3, 6]))
+print('result: {}'.format(selectionSort([5, 2, 7, 12, 3, 6])))
